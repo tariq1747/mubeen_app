@@ -1,0 +1,35 @@
+name: group_manager
+description: A Flutter app to manage groups, participants and payments with local (sqflite) storage.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.6
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  intl: ^0.19.0
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/app_logo.png
+
+# Run `flutter pub run flutter_launcher_icons` once (after `flutter create`
+# has generated the android/ios folders) to turn this same logo into the
+# real home-screen app icon on Android and iOS.
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_logo.png"
